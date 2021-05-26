@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CollatzSequenceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-05-26T08:53:44" hostname="LAPTOP-PPH4D9KA" time="0.039">
+  <properties/>
+  <testcase name="checkOddNumber()" classname="CollatzSequenceTest" time="0.033"/>
+  <testcase name="checkCollatzSequence()" classname="CollatzSequenceTest" time="0.003"/>
+  <testcase name="checkEvenNumber()" classname="CollatzSequenceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
