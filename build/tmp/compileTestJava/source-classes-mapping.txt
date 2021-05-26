@@ -1,4 +1,0 @@
-SequenceGeneratorTest.java
- SequenceGeneratorTest
-CollatzSequenceTest.java
- CollatzSequenceTest
