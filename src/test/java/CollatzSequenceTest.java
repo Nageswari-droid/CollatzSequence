@@ -13,23 +13,23 @@ public class CollatzSequenceTest {
 
     @BeforeAll
     public static void setup() {
-        int number = 5;
+        int number = 1;
         collatzSequence = new CollatzSequence(number);
     }
 
     @Test
     public void checkCollatzSequence() {
-        ArrayList<Integer> sequenceList = new ArrayList<>(Arrays.asList(5, 16, 8, 4, 2, 1));
+        ArrayList<Integer> sequenceList = new ArrayList<>(Arrays.asList(1, 4, 2, 1));
         assertIterableEquals(sequenceList, collatzSequence.generateCollatzSequence());
     }
 
     @Test
     public void checkEvenNumber() {
-        assertEquals(8, collatzSequence.getEvenNumberResult(16));
+        assertEquals(2, collatzSequence.getEvenNumberResult(4));
     }
 
     @Test
     public void checkOddNumber() {
-        assertEquals(16, collatzSequence.getOddNumberResult(5));
+        assertEquals(4, collatzSequence.getOddNumberResult(1));
     }
 }
