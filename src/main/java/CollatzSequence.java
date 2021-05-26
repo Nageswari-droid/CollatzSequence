@@ -12,7 +12,7 @@ public class CollatzSequence {
     public ArrayList<Integer> generateCollatzSequence() {
         do {
 
-            number = (number % 2 == 0) ? getEvenNumberResult(number) : getOddNumberResult(number);
+            number = (number % 2 == 0) ? evenNumberResult(number) : oddNumberResult(number);
             sequenceList.add(number);
 
         } while (number != 1);
@@ -20,11 +20,11 @@ public class CollatzSequence {
         return sequenceList;
     }
 
-    public int getEvenNumberResult(int evenNumber) {
+    public int evenNumberResult(int evenNumber) {
         return evenNumber / 2;
     }
 
-    public int getOddNumberResult(int oddNumber) {
+    public int oddNumberResult(int oddNumber) {
         return ((3 * oddNumber) + 1);
     }
 }

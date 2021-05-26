@@ -8,12 +8,12 @@ public class SequenceGenerator {
         int number;
         number = scanner.nextInt();
 
-        SequenceGenerator sequenceGenerator = new SequenceGenerator();
         CollatzSequence collatzSequence = new CollatzSequence(number);
 
-        if (sequenceGenerator.validateNumber(number)) {
+        if (number > 0) {
 
             ArrayList<Integer> collatzSequenceList = collatzSequence.generateCollatzSequence();
+
             for (int i = 0; i < collatzSequenceList.size(); i++) {
                 System.out.println(collatzSequenceList.get(i));
             }
@@ -21,9 +21,5 @@ public class SequenceGenerator {
         } else {
             System.out.println("Invalid input");
         }
-    }
-
-    public boolean validateNumber(int number) {
-        return number > 0;
     }
 }

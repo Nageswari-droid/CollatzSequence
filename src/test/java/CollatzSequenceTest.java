@@ -25,11 +25,11 @@ public class CollatzSequenceTest {
 
     @Test
     public void checkEvenNumber() {
-        assertEquals(2, collatzSequence.getEvenNumberResult(4));
+        assertEquals(2, collatzSequence.evenNumberResult(4));
     }
 
     @Test
     public void checkOddNumber() {
-        assertEquals(4, collatzSequence.getOddNumberResult(1));
+        assertEquals(4, collatzSequence.oddNumberResult(1));
     }
 }
