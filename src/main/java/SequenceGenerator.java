@@ -12,10 +12,12 @@ public class SequenceGenerator {
         CollatzSequence collatzSequence = new CollatzSequence(number);
 
         if (sequenceGenerator.validateNumber(number)) {
+
             ArrayList<Integer> collatzSequenceList = collatzSequence.generateCollatzSequence();
             for (int i = 0; i < collatzSequenceList.size(); i++) {
                 System.out.println(collatzSequenceList.get(i));
             }
+
         } else {
             System.out.println("Invalid input");
         }
