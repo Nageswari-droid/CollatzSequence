@@ -11,12 +11,10 @@ public class CollatzSequence {
 
     public ArrayList<Integer> generateCollatzSequence() {
         do {
-            if (number % 2 == 0) {
-                number = getEvenNumberResult(number);
-            } else {
-                number = getOddNumberResult(number);
-            }
+
+            number = (number % 2 == 0) ? getEvenNumberResult(number) : getOddNumberResult(number);
             sequenceList.add(number);
+
         } while (number != 1);
 
         return sequenceList;
